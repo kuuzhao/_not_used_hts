@@ -6016,7 +6016,7 @@ $as_echo "32-bit" >&6; }
 				elif test x$ac_cv_sizeof_int_p = x"8"; then
 					{ $as_echo "$as_me:${as_lineno-$LINENO}: result: 64-bit" >&5
 $as_echo "64-bit" >&6; }
-					LDFLAGS="-L/usr/X11R6/lib64 $LDFLAGS"
+					LDFLAGS="-L/usr/X11R6/lib64 -u MAIN__ $LDFLAGS"
 				fi
 				ARCH=linux
 				trad_bin_dir=linux
